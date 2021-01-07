@@ -1,8 +1,7 @@
-
-let fs = require("fs")
+let fs  = require("fs")
 module.exports = {
-    faqsJson : function(){    
-       return JSON.parse(fs.readFileSync('./data/faqs.json','utf-8'));
+    faqsJSON : function(){
+    return JSON.parse(fs.readFileSync('./data/faqs.json','utf-8'));
     }
 }
 

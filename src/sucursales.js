@@ -1,9 +1,6 @@
-const { leerJSON } = require("./theaters");
-const fs= require('fs');
-
 module.exports = {
-    bd : './data/theaters.json',
-    leerJSON : function(){
-        return JSON.parse(fs.readFileSync(this.bd,'utf-8'))
+    sucursales : function() {
+        const fs = require("fs");
+        return JSON.parse(fs.readFileSync("./data/theaters.json", "utf-8"))
     }
 }
